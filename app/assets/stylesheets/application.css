@@ -1,4 +1,13 @@
 @font-face {
+  font-family: 'Proxima_Nova_Bold';
+  src:url('<%= font_path 'Proxima-Nova/Proxima_Nova_Bold' %>')
+}
+@font-face {
+  font-family: 'Proxima_regular';
+  src:url('<%= font_path 'Proxima-Nova/Proxima_regular' %>')
+}
+/*  
+@font-face {
     font-family: Proxima_Nova_Bold;
     src: url(Proxima-Nova/Proxima_Nova_Bold.ttf);
 }
@@ -7,6 +16,7 @@
     font-family: Proxima_regular;
     src: url(Proxima-Nova/Proxima_regular.ttf);
 }
+*/
 
 body {
     font-family: 'Proxima_regular', sans-serif;
@@ -24,7 +34,7 @@ textarea{
     min-height: 150px;
 }
 #hero-image {
-    background-image: linear-gradient(to left, rgba(100, 65, 165,.88) , rgba(42, 8, 69, .88)), url('hero.jpg');
+    background-image: linear-gradient(to left, rgba(100, 65, 165,.88) , rgba(42, 8, 69, .88)), url(<%= asset_path 'header_image.jpg' %>);
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
