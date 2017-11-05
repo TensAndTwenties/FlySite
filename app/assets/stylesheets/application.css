@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Proxima_Nova_Bold;
-    src: url(Proxima-Nova/Proxima_Nova_Bold.ttf);
+  font-family: 'Proxima_Nova_Bold';
+  src:url('<%= font_path 'Proxima_Nova_Bold' %>')
 }
 
 @font-face {
