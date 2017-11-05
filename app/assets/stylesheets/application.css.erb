@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: Proxima_regular;
-    src: url(Proxima-Nova/Proxima_regular.ttf);
+  font-family: 'Proxima_regular';
+  src:url('<%= font_path 'Proxima_regular' %>')
 }
 
 body {
@@ -24,7 +24,7 @@ textarea{
     min-height: 150px;
 }
 #hero-image {
-    background-image: linear-gradient(to left, rgba(100, 65, 165,.88) , rgba(42, 8, 69, .88)), url('hero.jpg');
+    background-image: linear-gradient(to left, rgba(100, 65, 165,.88) , rgba(42, 8, 69, .88)), url(<%= asset_path 'hero.jpg' %>);
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
